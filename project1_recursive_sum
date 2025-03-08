@@ -1,0 +1,12 @@
+def r_sum(x):
+    if(x == 0):
+        print("Enter a natural number")
+
+    elif(x == 1):
+        return 1
+    
+    else:
+        return x + r_sum(x-1)
+    
+x = int(input("Enter a number :  "))
+print(f"The sum of first {x} natural numbers: ",r_sum(x))
