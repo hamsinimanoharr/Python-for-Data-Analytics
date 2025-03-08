@@ -1,0 +1,8 @@
+def create_dictionary(words):
+    return {i[0]: [j for j in words if j[0] == i[0]] for i in words}
+
+
+words = input("Enter a string separated by spaces  :  ").title().split()
+result = create_dictionary(words)
+for key,value in sorted(result.items()):
+    print(f"{key}:{sorted(value)}")
