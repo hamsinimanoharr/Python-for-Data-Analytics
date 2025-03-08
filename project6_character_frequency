@@ -1,0 +1,8 @@
+def count_characters(str):
+    return {i : str.count(i) for i in str if i.isalpha()}
+
+
+str = input("Enter a string  :  ")
+result = count_characters(str)
+for key,value in result.items():
+    print(f"{key}:{value}")
